@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nwpa-landscaping-quotes.netlify.app/sitemap.xml
