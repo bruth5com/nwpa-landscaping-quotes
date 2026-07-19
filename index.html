@@ -165,6 +165,8 @@
   .faq-item p { color: var(--bark); font-size: 0.9rem; line-height: 1.7; font-weight: 300; padding-bottom: 18px; }
 
   footer { background: var(--forest); padding: 24px 30px; text-align: center; }
+  footer a { text-decoration: underline; }
+  footer a:hover, footer a:focus { color: white; }
   footer p { color: rgba(255,255,255,0.4); font-size: 0.78rem; font-weight: 300; }
 
   @media (max-width: 600px) {
@@ -176,9 +178,10 @@
 </head>
 <body>
 
-<div class="hero">
+<main id="main-content">
+<section class="hero" aria-labelledby="hero-heading">
   <span class="hero-tag">🌲 Venango, Crawford, Warren, Forest, Clarion, Butler & Mercer Counties</span>
-  <h1>NW Pennsylvania Landscapers,<br>Your Property Cared For <em>Year-Round.</em></h1>
+  <h1 id="hero-heading">NW Pennsylvania Landscapers,<br>Your Property Cared For <em>Year-Round.</em></h1>
   <p class="hero-sub">Lawn care, tree removal, brush clearing, snow removal and more — connect with trusted local property care crews across Franklin, Oil City and surrounding NW Pennsylvania counties. Free estimates, no pressure.</p>
   <a href="tel:8142098304" style="display:inline-block;background:var(--gold);color:var(--forest);font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:500;letter-spacing:2px;padding:14px 32px;text-decoration:none;text-transform:uppercase;">📞 Call Us: (814) 209-8304</a>
   <div class="season-pills">
@@ -189,11 +192,11 @@
     <span class="pill">✂️ Trimming & Cleanup</span>
     <span class="pill">❄️ Snow Removal</span>
   </div>
-</div>
+</section>
 
-<div class="form-section" id="get-estimate">
+<section class="form-section" id="get-estimate" aria-labelledby="form-heading">
   <p class="form-kicker">Venango · Crawford · Warren · Forest · Clarion · Butler · Mercer</p>
-  <h2 class="form-h">Request Your Free Property Quote</h2>
+  <h2 class="form-h" id="form-heading">Request Your Free Property Quote</h2>
   <p class="form-p">Serving all seven NW Pennsylvania counties. A local crew will follow up within 24 hours.</p>
   <div class="form-card">
     <form action="https://formspree.io/f/xzdworyw" method="POST">
@@ -244,11 +247,11 @@
     <p class="note">Your info is never sold or shared. We only use it to connect you with a vetted local crew.</p>
     </form>
   </div>
-</div>
+</section>
 
-<div class="seasons">
+<section class="seasons" aria-labelledby="seasons-heading">
   <div class="seasons-inner">
-    <p class="seasons-label">Services For Every Season</p>
+    <p class="seasons-label" id="seasons-heading">Services For Every Season</p>
     <div class="seasons-grid">
       <div class="season-card"><span class="s-icon">🌸</span><h3>Spring</h3><ul><li>Cleanup & debris removal</li><li>Mulching & edging</li><li>Lawn seeding & treatment</li><li>Tree trimming</li></ul></div>
       <div class="season-card"><span class="s-icon">☀️</span><h3>Summer</h3><ul><li>Regular lawn mowing</li><li>Brush hogging & field mowing</li><li>Tree & shrub trimming</li><li>Storm damage cleanup</li></ul></div>
@@ -256,11 +259,11 @@
       <div class="season-card"><span class="s-icon">❄️</span><h3>Winter</h3><ul><li>Snow plowing</li><li>Salting & de-icing</li><li>Commercial lot clearing</li><li>Emergency response</li></ul></div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="land">
+<section class="land" aria-labelledby="land-heading">
   <p class="land-kicker">Rural & Acreage Specialists</p>
-  <h2>Land Clearing & Rural Property Services</h2>
+  <h2 id="land-heading">Land Clearing & Rural Property Services</h2>
   <p class="land-intro">Northwest Pennsylvania is full of overgrown lots, hunting camps, gravel driveways and wooded acreage. We connect you with local crews running skid steers, tractors and brush hogs who handle the jobs most lawn companies can't.</p>
   <div class="land-grid">
     <div class="land-card"><span class="l-icon">🚜</span><h3>Brush Hogging & Field Mowing</h3><p>Overgrown fields, pastures and fence lines cut back and kept under control — from a single acre to a whole farm.</p><a class="land-link" href="/brush-hogging-field-mowing.html">Learn More →</a></div>
@@ -270,11 +273,11 @@
     <div class="land-card"><span class="l-icon">💧</span><h3>Drainage & French Drains</h3><p>Standing water and soggy yards fixed with proper grading, French drains and culvert work. <a href="/yard-drainage-cost" style="color:inherit;text-decoration:underline;">Learn more →</a></p></div>
     <div class="land-card"><span class="l-icon">🦌</span><h3>Camp & Hunting Land Services</h3><p>Seasonal camp maintenance, access trail clearing and food plot prep for hunting properties near the Allegheny National Forest.</p><a class="land-link" href="/camp-and-hunting-land-services.html">Learn More →</a></div>
   </div>
-</div>
+</section>
 
-<div class="photo-section">
+<section class="photo-section" aria-labelledby="photo-heading">
   <div class="photo-inner">
-    <p class="photo-kicker">Local Crews. Real Work.</p>
+    <p class="photo-kicker" id="photo-heading">Local Crews. Real Work.</p>
     <p class="photo-sub">NW Pennsylvania landscaping and property care — before and after, start to finish.</p>
     <div class="photo-grid">
       <img src="lndscape_before_and_after.png" alt="Landscaping before and after in NW Pennsylvania" loading="lazy">
@@ -283,40 +286,40 @@
       <img src="lndscp_brshafter.png" alt="Land clearing completed in NW Pennsylvania" loading="lazy">
     </div>
   </div>
-</div>
+</section>
 
-<div class="testimonial-section">
+<section class="testimonial-section" aria-labelledby="testimonial-heading">
   <div class="testimonial-inner">
     <p class="testimonial-kicker">Homeowner Reviews</p>
-    <h2 class="testimonial-h">What Homeowners Are Saying</h2>
+    <h2 class="testimonial-h" id="testimonial-heading">What Homeowners Are Saying</h2>
     <div class="testimonial-card">
       <div class="testimonial-stars" aria-label="5 out of 5 stars" role="img">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p class="testimonial-quote">"I just needed someone to clean up the back half of my property — overgrown brush, a few dead trees, nothing huge. Most companies I called weren't interested in a job that size. These guys matched me with a local crew who showed up exactly when they said they would, knocked it out in an afternoon, and charged me a fair price. Sometimes you just need someone who'll show up. That's what I got."</p>
       <p class="testimonial-author">— Carol B., <span class="testimonial-location">Mercer County, PA</span></p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="how">
+<section class="how" aria-labelledby="how-heading">
   <p class="how-kicker">How It Works</p>
-  <h2>Three Simple Steps</h2>
+  <h2 id="how-heading">Three Simple Steps</h2>
   <div class="steps">
     <div class="step"><div class="sn">1</div><h4>Submit Your Request</h4><p>Tell us your service need and property location. Takes under a minute.</p></div>
     <div class="step"><div class="sn">2</div><h4>We Find Your Crew</h4><p>We match you with a vetted local property care company near you.</p></div>
     <div class="step"><div class="sn">3</div><h4>Get Your Estimate</h4><p>A real local crew follows up to schedule your free, no-pressure estimate.</p></div>
   </div>
-</div>
+</section>
 
-<div class="areas">
+<section class="areas" aria-labelledby="areas-heading">
   <div class="areas-inner">
     <p class="areas-kicker">Service Areas</p>
-    <h2>Crews Near You in NW Pennsylvania</h2>
+    <h2 id="areas-heading">Crews Near You in NW Pennsylvania</h2>
     <p class="lead">From weekly lawn care in Franklin and Oil City to brush hogging and land clearing on rural acreage across Forest, Clarion and Warren Counties, local crews cover all of northwest Pennsylvania.</p>
     <div class="town-list">
       <span class="town">Franklin</span> <span class="town">Oil City</span> <span class="town">Sugarcreek</span> <span class="town">Seneca</span> <span class="town">Cranberry</span> <span class="town">Emlenton</span> <span class="town">Meadville</span> <span class="town">Titusville</span> <span class="town">Cambridge Springs</span> <span class="town">Conneaut Lake</span> <span class="town">Cochranton</span> <span class="town">Warren</span> <span class="town">Youngsville</span> <span class="town">Tionesta</span> <span class="town">Marienville</span> <span class="town">Clarion</span> <span class="town">Knox</span> <span class="town">Butler</span> <span class="town">Slippery Rock</span> <span class="town">Zelienople</span> <span class="town">Grove City</span> <span class="town">Hermitage</span> <span class="town">Sharon</span> <span class="town">Greenville</span> <span class="town">Mercer</span> <span class="town">Sandy Lake</span>
     </div>
   </div>
-</div>
+</section>
 
 <section class="faq-section" aria-labelledby="faq-heading">
   <div class="faq-inner">
@@ -345,16 +348,18 @@
   </div>
 </section>
 
-<div style="background:white;border-top:1px solid #C8D8C8;padding:30px;text-align:center;">
+<section aria-label="From the blog" style="background:white;border-top:1px solid #C8D8C8;padding:30px;text-align:center;">
   <p style="font-family:'DM Sans',sans-serif;font-size:0.88rem;color:#6B5744;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;">From The Blog</p>
   <a href="/landscaping-small-jobs.html" style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#1A3320;text-decoration:none;border-bottom:1px solid #C49A2A;padding-bottom:2px;">How to Find a Landscaping Company for Small Jobs →</a>
   <br><br>
   <a href="/yard-drainage-cost" style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#1A3320;text-decoration:none;border-bottom:1px solid #C49A2A;padding-bottom:2px;">How Much Does Professional Yard Drainage Installation Cost? →</a>
-</div>
+</section>
+
+</main>
 
 <footer>
-  <p>Powered by <a href="https://tableturndigital.net" style="color:rgba(255,255,255,0.7);text-decoration:none;">TableTurn Digital</a> &mdash; NW Pennsylvania Lead Network</p>
-  <p style="margin-top:8px;"><a href="tel:8142098304" style="color:rgba(255,255,255,0.6);text-decoration:none;">📞 (814) 209-8304</a></p>
+  <p>Powered by <a href="https://tableturndigital.net" style="color:rgba(255,255,255,0.7);">TableTurn Digital</a> &mdash; NW Pennsylvania Lead Network</p>
+  <p style="margin-top:8px;"><a href="tel:8142098304" style="color:rgba(255,255,255,0.6);">📞 (814) 209-8304</a></p>
   <p style="margin-top:8px;font-size:0.75rem;color:rgba(255,255,255,0.3);">© 2026 TableTurn Digital · Franklin, PA · Venango County</p>
 </footer>
 
