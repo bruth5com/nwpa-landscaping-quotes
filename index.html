@@ -174,6 +174,10 @@
     .form-card { padding: 26px 18px; }
     .photo-grid { grid-template-columns: 1fr; }
   }
+/* Accessibility: visible keyboard focus and minimum interactive target size. */
+:where(a, button, input, select, textarea):focus-visible { outline: 3px solid #0b63ce; outline-offset: 3px; box-shadow: 0 0 0 2px #fff; }
+:where(button, input:not([type="checkbox"]):not([type="radio"]), select) { min-height: 44px; }
+@media (pointer: coarse) { nav a, a[class*="btn"] { display: inline-flex; align-items: center; min-height: 44px; } }
 </style>
 </head>
 <body>
@@ -280,10 +284,10 @@
     <p class="photo-kicker" id="photo-heading">Local Crews. Real Work.</p>
     <p class="photo-sub">NW Pennsylvania landscaping and property care — before and after, start to finish.</p>
     <div class="photo-grid">
-      <img src="lndscape_before_and_after.png" alt="Landscaping before and after in NW Pennsylvania" loading="lazy">
-      <img src="lndscp814.png" alt="Local landscaping crew serving NW Pennsylvania" loading="lazy">
-      <img src="lndscp_brsh_hg.png" alt="Brush hogging and field mowing in NW Pennsylvania" loading="lazy">
-      <img src="lndscp_brshafter.png" alt="Land clearing completed in NW Pennsylvania" loading="lazy">
+      <img src="lndscape_before_and_after.png" alt="Landscaping before and after in NW Pennsylvania" width="1024" height="1024" loading="lazy" decoding="async">
+      <img src="lndscp814.png" alt="Local landscaping crew serving NW Pennsylvania" width="1024" height="1024" loading="lazy" decoding="async">
+      <img src="lndscp_brsh_hg.png" alt="Brush hogging and field mowing in NW Pennsylvania" width="1024" height="1024" loading="lazy" decoding="async">
+      <img src="lndscp_brshafter.png" alt="Land clearing completed in NW Pennsylvania" width="1024" height="1024" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
