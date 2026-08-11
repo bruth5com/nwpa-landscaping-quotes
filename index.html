@@ -201,17 +201,17 @@
   <div class="form-card">
     <form action="https://formspree.io/f/xzdworyw" method="POST">
     <div class="r-grid">
-      <div class="r"><label for="first_name">First Name</label><input type="text" id="first_name" name="first_name" placeholder="John"></div>
-      <div class="r"><label for="last_name">Last Name</label><input type="text" id="last_name" name="last_name" placeholder="Smith"></div>
+      <div class="r"><label for="first_name">First Name</label><input type="text" id="first_name" name="first_name" autocomplete="given-name" placeholder="John" required></div>
+      <div class="r"><label for="last_name">Last Name</label><input type="text" id="last_name" name="last_name" autocomplete="family-name" placeholder="Smith" required></div>
     </div>
     <div class="r-grid">
-      <div class="r"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="(814) 555-0100"></div>
-      <div class="r"><label for="zip_code">ZIP Code</label><input type="text" id="zip_code" name="zip_code" placeholder="16301"></div>
+      <div class="r"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(814) 555-0100" required></div>
+      <div class="r"><label for="zip_code">ZIP Code</label><input type="text" id="zip_code" name="zip_code" autocomplete="postal-code" inputmode="numeric" placeholder="16301" required></div>
     </div>
     <div class="r">
       <label for="service_type">What Do You Need?</label>
-      <select id="service_type" name="service_type">
-        <option value="">Select a service...</option>
+      <select id="service_type" name="service_type" required>
+        <option value="" disabled selected>Select a service...</option>
         <option>Lawn Mowing / Maintenance</option>
         <option>Brush Hogging / Field Mowing</option>
         <option>Land & Lot Clearing</option>
