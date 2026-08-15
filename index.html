@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LD71YBM4FX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LD71YBM4FX');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NW Pennsylvania Landscapers | Lawn Care & Land Clearing</title>
@@ -11,6 +13,10 @@
 <meta property="og:url" content="https://nwpa-landscaping-quotes.netlify.app/" />
 <meta property="og:description" content="Landscaping, lawn care, brush hogging and land clearing across NW Pennsylvania. Free estimates. Call (814) 209-8304." />
 <meta property="og:image" content="https://nwpa-landscaping-quotes.netlify.app/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NW Pennsylvania Landscapers | Lawn Care &amp; Land Clearing" />
+<meta name="twitter:description" content="Local landscaping and property-care crews across NW Pennsylvania. Free estimates and fast follow-up." />
+<meta name="twitter:image" content="https://nwpa-landscaping-quotes.netlify.app/og-image.jpg" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -181,6 +187,17 @@
 :where(button, input:not([type="checkbox"]):not([type="radio"]), select) { min-height: 44px; }
 @media (pointer: coarse) { nav a, a[class*="btn"] { display: inline-flex; align-items: center; min-height: 44px; } }
 </style>
+<style>
+  .launch-usp { background:#C49A2A; color:#132719; padding:14px 24px; display:flex; justify-content:center; gap:34px; flex-wrap:wrap; font-size:.82rem; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+  .mobile-action { display:none; }
+  @media (max-width:700px) {
+    body { padding-bottom:72px; }
+    .launch-usp { gap:10px 22px; font-size:.72rem; }
+    .mobile-action { position:fixed; z-index:1000; left:0; right:0; bottom:0; display:grid; grid-template-columns:1fr 1fr; background:#1A3320; box-shadow:0 -4px 18px rgba(0,0,0,.25); }
+    .mobile-action a { min-height:60px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; text-decoration:none; }
+    .mobile-action a:last-child { background:#C49A2A; color:#1A3320; }
+  }
+</style>
 </head>
 <body>
 
@@ -200,12 +217,17 @@
   </div>
 </section>
 
+<div class="launch-usp" aria-label="Why use our landscaping network">
+  <span>Local NWPA Crews</span><span>Free Estimates</span><span>Residential &amp; Commercial</span><span>Follow-Up Within 24 Hours</span>
+</div>
+
 <section class="form-section" id="get-estimate" aria-labelledby="form-heading">
   <p class="form-kicker">Venango · Crawford · Warren · Forest · Clarion · Butler · Mercer</p>
   <h2 class="form-h" id="form-heading">Request Your Free Property Quote</h2>
   <p class="form-p">Serving all seven NW Pennsylvania counties. A local crew will follow up within 24 hours.</p>
   <div class="form-card">
-    <form action="https://formspree.io/f/xzdworyw" method="POST">
+    <form action="https://formspree.io/f/xzdworyw" method="POST" data-thank-you="/thank-you.html">
+    <input type="hidden" name="_next" value="https://nwpa-landscaping-quotes.netlify.app/thank-you.html">
     <div class="r-grid">
       <div class="r"><label for="first_name">First Name</label><input type="text" id="first_name" name="first_name" autocomplete="given-name" placeholder="John" required></div>
       <div class="r"><label for="last_name">Last Name</label><input type="text" id="last_name" name="last_name" autocomplete="family-name" placeholder="Smith" required></div>
@@ -214,6 +236,7 @@
       <div class="r"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(814) 555-0100" required></div>
       <div class="r"><label for="zip_code">ZIP Code</label><input type="text" id="zip_code" name="zip_code" autocomplete="postal-code" inputmode="numeric" placeholder="16301" required></div>
     </div>
+    <div class="r"><label for="email">Email Address</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required></div>
     <div class="r">
       <label for="service_type">What Do You Need?</label>
       <select id="service_type" name="service_type" required>
@@ -250,7 +273,7 @@
       <textarea id="details" name="details" placeholder="e.g. About 3 acres overgrown with brush behind the house, gravel driveway needs regrading..."></textarea>
     </div>
     <button class="submit" type="submit">Request My Free Quote →</button>
-    <p class="note">Your info is never sold or shared. We only use it to connect you with a vetted local crew.</p>
+    <p class="note">We use your information only to respond and connect you with a vetted local crew. See our <a href="/privacy.html">Privacy Policy</a>.</p>
     </form>
   </div>
 </section>
@@ -366,8 +389,31 @@
 <footer>
   <p>Powered by <a href="https://tableturndigital.net" style="color:rgba(255,255,255,0.7);">TableTurn Digital</a> &mdash; NW Pennsylvania Lead Network</p>
   <p style="margin-top:8px;"><a href="tel:8142098304" style="color:rgba(255,255,255,0.6);">📞 (814) 209-8304</a></p>
+  <p style="margin-top:8px;"><a href="/privacy.html" style="color:rgba(255,255,255,0.7);">Privacy Policy</a></p>
   <p style="margin-top:8px;font-size:0.75rem;color:rgba(255,255,255,0.3);">© 2026 TableTurn Digital · Franklin, PA · Venango County</p>
 </footer>
+
+<div class="mobile-action" aria-label="Quick actions">
+  <a href="tel:8142098304">Call Now</a>
+  <a href="#get-estimate">Free Estimate</a>
+</div>
+<script>
+document.querySelectorAll('form[data-thank-you]').forEach(function (form) {
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    const button = form.querySelector('[type="submit"]');
+    if (button) { button.disabled = true; button.textContent = 'Sending...'; }
+    try {
+      const response = await fetch(form.action, { method:'POST', body:new FormData(form), headers:{ Accept:'application/json' } });
+      if (!response.ok) throw new Error('Submission failed');
+      window.location.assign(form.dataset.thankYou);
+    } catch (error) {
+      if (button) { button.disabled = false; button.textContent = 'Request My Free Estimate →'; }
+      alert('We could not send your request. Please call (814) 209-8304 or try again.');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
